@@ -1,43 +1,47 @@
 ;(function (){
 	'use strict'
+	
+	
 
 	const articles = [
 		{
 			id: 1,
-			title: 'Какой нибуть заголовок',
-			content: 'Какой-нибуть контент'
+			title: 'Another title',
+			content: 'Any other content'
 		},
 		{
 			id: 2,
-			title: 'Еще какой-нибуть заголовок',
-			content: 'Еще какой-нибуть контент'
+			title: 'Another title',
+			content: 'Any other content'
 		},
 		{
 			id: 3,
-			title: 'Все о пчелах',
-			content: 'Пчелы делают мед'
+			title: 'All about bees',
+			content: 'Bees make honey'
 		},
 		{
 			id: 4,
-			title: 'О вреде курения',
-			content: 'Курение это плохо'
+			title: 'About the dangers of smoking',
+			content: 'Smoking is bad'
 		},
 		{
 			id: 5,
-			title: 'Злые собаки',
-			content: `<h1>Заголовок статьи</h1>
-				<p>Далеко-далеко за <a href="#">словесными горами в стране</a>, гласных и согласных живут рыбные тексты. Использовало однажды гор семь, снова раз. Города большой безорфографичный меня.</p>
- 				<p>Lorem имени, продолжил своего реторический своих послушавшись грустный даль страну парадигматическая океана рыбными, рыбного переписывается, страна? Свой заголовок свое, он.</p>
-				<h2>Заголовок второго уровня</h2>
- 				<p>Что, повстречался последний всеми его щеке не, знаках встретил использовало, прямо, раз свой. Города силуэт, заглавных всеми, свою прямо но!</p>
-				<p>Текстов которой вскоре журчит рекламных свою, сбить на берегу рот. Великий страну проектах знаках над что путь языком, подпоясал, свой они!</p>
-				<h3>Заголовок третьего уровня</h3>
-				<p>Скатился переулка первую единственное имени над запятых, грустный заголовок переписывается власти переписали. Букв строчка вскоре продолжил, страна злых раз страну.</p> 				
-				<p>Букв переписали, продолжил. Силуэт, путь текста журчит переписывается назад от всех его выйти однажды, бросил букв, путь несколько вскоре даже рукопись.</p>`
+			title: 'Angry dogs',
+			content: `<h1> Title of the article </h1>
+			<p> Far, far beyond the <a href="#"> verbal mountains in the country </a>, vowels and consonants live fish texts. Used once mountains seven times again. The cities are big ororographic me. </p>
+			 <p> Lorem named, continued his rhetorical of his obeying the sad distant country of the paradigmatic ocean of fish, fish corresponded, country? His own headline, he. </p>
+			<h2> Second level heading </h2>
+			 <p> That, the latter met with all his cheek not, met signs used, directly, once his. The city's silhouette, capitalized by all, its straight but! </p>
+			<p> The texts of which soon murmurs its advertising, knock down the mouth of the shore. Great country projects signs over that way in tongue, belted their own! </p>
+			<h3> Third level heading </h3>
+			<p> A lane rolled down the first single name over commas, the sad title is being overwritten by authorities rewritten. The letter line continued soon, a country of evil country times. </p>
+			<p> The letters were rewritten, continued. The silhouette, the path of the text murmurs corresponded back from all of it to go out once, threw letters, the path is somewhat soon even the manuscript. </p>`
 
 		}
 	]
-
+	
+	
+	
 	if (!localStorage.getItem('articles')) {
 		localStorage.setItem('articles',JSON.stringify(articles))
 	}

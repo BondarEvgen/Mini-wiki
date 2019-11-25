@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Создать статью - учебный проект Википедия</title>
+	<title>Create article - study project Wikipedia</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -11,37 +11,37 @@
 
 	<header class="page-header page-header--wide">
 		<div class="page-header__logo">
-			<a href="index.html"><img src="img/wiki-logo.png" alt="Википедия"></a>
+			<a href="index.html"><img src="img/wiki-logo.png" alt="Wikipedia"></a>
 		</div>
 		<div class="page-header__page-title">
-			<h1>Добавить новую статью</h1>
+			<h1>Add new article</h1>
 		</div>
 	</header>
 
 	<div class="page-wrapper page-wrapper--wide">
 		<div class="editor-col">
 			<div class="editor-section-title">
-				Редактор статьи
+				Article editor
 			</div>
 			<div class="form-group">
-				<input class="form-input" type="text" placeholder="Название статьи"
+				<input class="form-input" type="text" placeholder="Page Name"
 				id="article-title">
 			</div>
 
 			<div class="form-group">
 				<div class="link-button">
 					<!-- Link to open the modal -->
-					<a href="#linkSelectModal">Добавить ссылку</a>
+					<a href="#linkSelectModal">Add link</a>
 				</div>
 				<textarea class="form-textarea" name="" cols="30" rows="10" id="markdown-source" ></textarea>
 			</div>
 
-			<button class="button-save" id="save-article-button">Сохранить статью</button>
+			<button class="button-save" id="save-article-button">Save article</button>
 
 		</div>
 		<div class="article-preview-col">
 			<div class="article-preview-section-title">
-				Предпросмотр статьи
+				Article Preview
 			</div>
 			<article class="article-wrapper" id="markdown-result">
 				<!-- <h1>Заголовок статьи</h1>
@@ -59,21 +59,21 @@
 
 	<!-- Modal HTML embedded directly into document -->
 	<div id="linkSelectModal" class="modal">
-		<h1>Выберите страницу</h1>
+		<h1>Choose page</h1>
 		<form action="">
 			<div class="form-group">
 				<select class="form-select" name="" id="">
-					<option value="">Статья 1</option>
-					<option value="">Статья 2</option>
-					<option value="">Статья 3</option>
-					<option value="">Статья 4</option>
-					<option value="">Статья 5</option>
-					<option value="">Статья 6</option>
-					<option value="">Статья 7</option>
+					<option value="">Article 1</option>
+					<option value="">Article 2</option>
+					<option value="">Article 3</option>
+					<option value="">Article 4</option>
+					<option value="">Article 5</option>
+					<option value="">Article 6</option>
+					<option value="">Article 7</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<button class="button">Указать ссылку</button>
+				<button class="button">Specify link</button>
 			</div>
 		</form>
 	</div>
